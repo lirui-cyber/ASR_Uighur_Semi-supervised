@@ -1,0 +1,5 @@
+export train_cmd="slurm.pl --quiet "
+export decode_cmd="slurm.pl --quiet"
+export mkgraph_cmd="slurm.pl --quiet"
+export cuda_cmd="slurm.pl --quiet"
+export other_cmd="slurm.pl --quiet"
