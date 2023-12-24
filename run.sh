@@ -34,11 +34,10 @@ asr_recog_set="2030_test"
 dir=exp/asr_${train_set}
 
 # Model Realated
-#vad_checkpoint=/home/wb521/ur_kis_server/server/bulid_server/vad_onx/vad_model/silero_vad.onnx
-vad_checkpoint=/home/lr521/wenet/examples/uy/s2/pretrained_model/vad_model/silero_vad.onnx
-asr_inference_vad_data_checkpoint=/home/lr521/wenet/examples/uy/s2/pretrained_model/asr_model/29.pt
-asr_inference_vad_data_checkpoint_global_cmvn=/home/lr521/wenet/examples/uy/s2/pretrained_model/asr_model/global_cmvn
-asr_config=/home/lr521/wenet/examples/uy/s2/pretrained_model/asr_model/train.yaml
+vad_checkpoint=pretrained_model/vad_model/silero_vad.onnx
+asr_inference_vad_data_checkpoint=pretrained_model/asr_model/29.pt
+asr_inference_vad_data_checkpoint_global_cmvn=pretrained_model/asr_model/global_cmvn
+asr_config=pretrained_model/asr_model/train.yaml
 asr_train_checkpoint=
 asr_inference_checkpoint=$dir/0.pt
 
@@ -57,9 +56,9 @@ do_delta=false
 nbpe=5000
 bpemode=unigram
 #dict=$wave_data/lang_char/${original_train_set}_${bpemode}${nbpe}_units.txt
-dict=/home/lr521/wenet/examples/uy/s2/pretrained_model/asr_model/Latin_U123456_2641H_unigram5000_units.txt
+dict=pretrained_model/asr_model/Latin_U123456_2641H_unigram5000_units.txt
 #bpemodel=$wave_data/lang_char/${train_set}_${bpemode}${nbpe}
-bpemodel=/home/lr521/wenet/examples/uy/s2/pretrained_model/asr_model/Latin_U123456_2641H_unigram5000
+bpemodel=pretrained_model/asr_model/Latin_U123456_2641H_unigram5000
 . tools/parse_options.sh || exit 1;
 
 
